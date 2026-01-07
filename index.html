@@ -12,6 +12,7 @@
   <header>
     <h1>Здравствуйте! Я Екатерина 👋</h1>
     <p>Учусь фронтенд-разработке и мечтаю пройти свою первую стажировку.</p>
+    <button id="theme-toggle" aria-label="Переключить тему">🌙</button>
   </header>
 
   <nav aria-label="Основная навигация">
@@ -44,19 +45,29 @@
       <h2>Проекты</h2>
       <p>Скоро здесь появятся мои первые проекты: лендинг, todo-приложение и погодный сервис!</p>
     </section>
-
-    <section id="contact">
-      <h2>Связаться со мной</h2>
-      <p>
-        Напишите мне на почту: 
-        <a href="mailto:contact@plamya-dushi.ru">kateryna.o9neva@yandex.ru</a>
-      </p>
-    </section>
+<section>
+    <h2>Связаться со мной</h2>
+<form id="contact-form" class="contact-form">
+  <div class="form-group">
+    <input type="email" id="email" placeholder=" " required />
+    <label for="email">Ваш email</label>
+  </div>
+  
+  <div class="form-group">
+    <textarea id="message" placeholder=" " rows="4" required></textarea>
+    <label for="message">Сообщение</label>
+  </div>
+  
+  <button type="submit" class="btn">Отправить</button>
+  <p id="form-status" class="form-status"></p>
+</form>
+</section>
   </main>
 
   <footer>
     <p>&copy; 2026 Екатерина Огнева. Все права защищены.</p>
   </footer>
   
+  <script src="script.js"></script>
 </body>
 </html>
