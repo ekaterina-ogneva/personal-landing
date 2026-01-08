@@ -249,3 +249,19 @@ body.dark-theme .form-group textarea:focus + label {
   font-weight: 500;
   min-height: 20px;
 }
+/* Вложенные списки */
+#education ul ul {
+  padding-left: 1.5rem;
+  margin-top: 8px;
+  list-style-type: circle;
+}
+
+#education h3 {
+  margin-top: 1.2rem;
+  margin-bottom: 0.6rem;
+  color: #2c3e50;
+}
+ul {
+  list-style: none;
+  padding-left: 0;
+}
