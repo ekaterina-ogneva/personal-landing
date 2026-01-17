@@ -265,3 +265,32 @@ ul {
   list-style: none;
   padding-left: 0;
 }
+/* Список проектов */
+.projects-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.projects-list li {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+body.dark-theme .projects-list li {
+  border-bottom-color: #444;
+}
+
+.projects-list a {
+  color: #4a6fa5;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+body.dark-theme .projects-list a {
+  color: #6fa5d4;
+}
+
+.projects-list a:hover {
+  text-decoration: underline;
+}
